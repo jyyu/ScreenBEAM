@@ -100,5 +100,5 @@ write.csv(r,file=file.path('results.ScreenBEAM.csv'),row.names=FALSE,na='')
 
 #### Licenses
 
-Licensed under the [MIT license](LICENSE). ([More information here](http://en.wikipedia.org/wiki/MIT_License).)
+Licensed under the [MIT license](LICENCE). ([More information here](http://en.wikipedia.org/wiki/MIT_License).)
 
