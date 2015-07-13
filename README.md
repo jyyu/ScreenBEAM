@@ -65,8 +65,6 @@ r<-ScreenBEAM(
   )
 
 
-
-
 ###microarray data
 r<-ScreenBEAM(
 
