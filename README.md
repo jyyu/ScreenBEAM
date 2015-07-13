@@ -31,6 +31,74 @@ curves linked to estimated QTL effects.
 ```r
 library(ScreenBEAM)
 
+###NGS data
+r<-ScreenBEAM(
+
+  ###input format
+  input.file=file.path('data/NGS.example.tsv')#tab-separted file
+  ,
+  control.samples=c('T0_A','T0_B','T0_C')#column names of control samples
+  ,
+  case.samples=c('T16_A','T16_B','T16_C')#column names of case/treated samples
+  ,
+  control.groupname='T0'#name your control group
+  ,
+  case.groupname='T16'#name your case group
+  ,
+
+  ###data pre-processing
+  data.type='NGS'#data type
+  ,
+  do.normalization=TRUE
+  ,
+  filterLowCount=TRUE
+  ,
+  filterBy = 'control'
+  ,
+  count.cutoff=4
+  ,
+
+  ###Bayesian computing
+  nitt=1500,#number of MCMC iterations, use small number here for testing, please use larger number in real data, 15000 is default
+  burnin=500#number of burnin in MCMC sampling, 5000 is default
+
+  )
+
+
+
+
+###microarray data
+r<-ScreenBEAM(
+
+  ###input format
+  input.file=file.path('data/microarray.example.tsv')#tab-separted file
+  ,
+  control.samples=c('T0_A','T0_B','T0_C')#column names of control samples
+  ,
+  case.samples=c('T16_A','T16_B','T16_C')#column names of case/treated samples
+  ,
+  control.groupname='T0'#name your control group
+  ,
+  case.groupname='T16'#name your case group
+  ,
+
+  ###data pre-processing
+  data.type='microarray'#data type
+  ,
+  do.normalization=FALSE#assuming the microarry data is normalized
+  ,
+
+  ###Bayesian computing
+  nitt=1500,#number of MCMC iterations, use small number here for testing, please use larger number in real data, 15000 is default
+  burnin=500#number of burnin in MCMC sampling, 5000 is default
+
+)
+
+head(r)
+
+###save your results
+write.csv(r,file=file.path('results.ScreenBEAM.csv'),row.names=FALSE,na='')
+
 ```
 
 #### Licenses
