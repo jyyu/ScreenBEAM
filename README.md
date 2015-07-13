@@ -1,4 +1,4 @@
-###ScreenBEAM: 
+###ScreenBEAM
 
 [ScreenBEAM](https://github.com/jyyu/ScreenBEAM) is an [R](http://www.r-project.org) package to do a gene-level meta-anlaysis of high-throughput functional genomics RNAi or CRISPR screening data. Both microarray and NGS data are supported. f you find this package useful, please cite the following paper:
 
@@ -36,5 +36,4 @@ library(ScreenBEAM)
 #### Licenses
 
 Licensed under the [MIT license](LICENSE). ([More information here](http://en.wikipedia.org/wiki/MIT_License).)
-
 
