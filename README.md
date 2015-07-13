@@ -20,7 +20,7 @@ Then install R/qtlcharts using the `install_github` function in the
 
 ```r
 library(devtools)
-install_github("kbroman/qtlcharts", build_vignettes=TRUE)
+install_github("jyyu/ScreenBEAM", build_vignettes=TRUE)
 ```
 
 #### Example use
