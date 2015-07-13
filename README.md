@@ -25,8 +25,7 @@ install_github("jyyu/ScreenBEAM", build_vignettes=TRUE)
 
 #### Example use
 
-Try the following example, which creates an interactive chart with LOD
-curves linked to estimated QTL effects.
+Try the following example to apply ScreenBEAM on NGS or microarry data. A data.frame with all statistical results is returned.
 
 ```r
 library(ScreenBEAM)
