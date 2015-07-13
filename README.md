@@ -7,7 +7,7 @@
 
 #### Installation
 
-Install R/qtlcharts from its
+Install ScreenBEAM from its
 [GitHub repository](https://github.com/jyyu/ScreenBEAM). You first need to [devtools](https://github.com/hadley/devtools) package.
 
 ```r
