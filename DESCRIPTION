@@ -1,8 +1,9 @@
 Package: ScreenBEAM
-Title: What the Package Does (one line, title case)
-Version: 0.0.0.9000
-Authors@R: person("First", "Last", email = "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph)
-Depends: R (>= 3.1.2)
-License: What license is it under?
+Title: Gene-level meta-analysis of high-throughput functional genomics (RNAi or CRISPR) screens.
+Version: 1.0.0
+Authors@R: person("Jiyang", "Yu", email = "yujiyang@gmail.com", role = c("aut", "cre"))
+Description: ScreenBEAM is a gene-level meta-anlaysis algorithm, via Bayesian hierarchical modeling, of high-throughput functional genomics RNAi or CRISPR screening data. Both microarray and NGS data are supported.
+Depends: R (>= 3.1.2), MCMCglmm, plyr, Biobase
+Suggets: arm
+License: MIT licence
 LazyData: true
