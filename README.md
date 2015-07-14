@@ -111,6 +111,11 @@ write.csv(r,file=file.path('results.ScreenBEAM.csv'),row.names=FALSE,na='')
 
 ```
 
+#### Google group page
+
+(https://groups.google.com/d/forum/screenbeam)
+
+
 #### Licenses
 
 Licensed under the [MIT license](LICENCE). ([More information here](http://en.wikipedia.org/wiki/MIT_License).)
