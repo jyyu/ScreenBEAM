@@ -3,7 +3,7 @@ Title: Gene-level meta-analysis of high-throughput functional genomics (RNAi or 
 Version: 1.0.0
 Authors@R: person("Jiyang", "Yu", email = "yujiyang@gmail.com", role = c("aut", "cre"))
 Description: ScreenBEAM is a gene-level meta-anlaysis algorithm, via Bayesian hierarchical modeling, of high-throughput functional genomics RNAi or CRISPR screening data. Both microarray and NGS data are supported.
-Depends: R (>= 3.0.2), MCMCglmm, plyr, Rcpp, Biobase
+Depends: R (>= 3.0.2), MCMCglmm, plyr, Rcpp
 Suggets: arm
 License: MIT licence
 LazyData: true
