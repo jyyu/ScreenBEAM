@@ -6,7 +6,7 @@ library(ScreenBEAM)
 r<-ScreenBEAM(
 
   ###input format
-  input.file=system.file("extdata", "microarray.example.tsv", package = "ScreenBEAM")
+  input.file=system.file("extdata", "NGS.example.tsv", package = "ScreenBEAM")
   ,
   control.samples=c('T0_A','T0_B','T0_C')
   ,
