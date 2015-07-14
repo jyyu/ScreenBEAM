@@ -111,9 +111,9 @@ write.csv(r,file=file.path('results.ScreenBEAM.csv'),row.names=FALSE,na='')
 
 ```
 
-#### Google group page
+#### Google discussion group
 
-(https://groups.google.com/d/forum/screenbeam)
+https://groups.google.com/d/forum/screenbeam
 
 
 #### Licenses
