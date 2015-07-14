@@ -14,7 +14,13 @@ Install ScreenBEAM from its
 install.packages(c("devtools"))
 ```
 
-Then install R/qtlcharts using the `install_github` function in the
+Install required Biobase package from Bioconductor.
+```r
+source("http://bioconductor.org/biocLite.R")
+biocLite("Biobase")
+```
+
+Then install R/ScreenBEAM using the `install_github` function in the
 [devtools](https://github.com/hadley/devtools) package.
 
 ```r
