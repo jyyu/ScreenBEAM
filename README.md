@@ -15,12 +15,11 @@ install.packages(c("devtools"))
 ```
 
 Then install R/qtlcharts using the `install_github` function in the
-[devtools](https://github.com/hadley/devtools) package. (With
-`build_vignettes=TRUE`, the vignettes will be built and installed.)
+[devtools](https://github.com/hadley/devtools) package.
 
 ```r
 library(devtools)
-install_github("jyyu/ScreenBEAM", build_vignettes=TRUE)
+install_github("jyyu/ScreenBEAM")
 ```
 
 #### Example use
