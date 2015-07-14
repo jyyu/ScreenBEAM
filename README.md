@@ -39,7 +39,7 @@ library(ScreenBEAM)
 r<-ScreenBEAM(
 
   ###input format
-  input.file=file.path('data/NGS.example.tsv')#tab-separted file
+  input.file=system.file("extdata", "NGS.example.tsv", package = "ScreenBEAM")#tab-separted file
   ,
   control.samples=c('T0_A','T0_B','T0_C')#column names of control samples
   ,
@@ -73,7 +73,7 @@ r<-ScreenBEAM(
 r<-ScreenBEAM(
 
   ###input format
-  input.file=file.path('data/microarray.example.tsv')#tab-separted file
+  input.file=system.file("extdata", "microarray.example.tsv", package = "ScreenBEAM")#tab-separted file
   ,
   control.samples=c('T0_A','T0_B','T0_C')#column names of control samples
   ,
