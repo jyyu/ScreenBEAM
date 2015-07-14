@@ -28,6 +28,14 @@ library(devtools)
 install_github("jyyu/ScreenBEAM")
 ```
 
+#### Input file format
+
+Input file format for ScreenBEAM is tab-separated text file with "sh/sgRNA_Id", "gene id or symbol" as the first two columns, followed by the samples. Examples are below:
+
+- [NGS count data] (https://github.com/jyyu/ScreenBEAM/blob/master/inst/extdata/NGS.example.tsv)
+- [Microarray log2-transformed data] (https://github.com/jyyu/ScreenBEAM/blob/master/inst/extdata/microarray.example.tsv)
+
+
 #### Example use
 
 Try the following example to apply ScreenBEAM on NGS or microarry data. A data.frame with all statistical results is returned.
