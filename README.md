@@ -8,7 +8,7 @@
 #### Installation
 
 Install ScreenBEAM from its
-[GitHub repository](https://github.com/jyyu/ScreenBEAM). You first need to [devtools](https://github.com/hadley/devtools) package.
+[GitHub repository](https://github.com/jyyu/ScreenBEAM). You first need to install [devtools](https://github.com/hadley/devtools) package.
 
 ```r
 install.packages(c("devtools"))
