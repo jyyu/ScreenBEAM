@@ -2,7 +2,7 @@
 
 [ScreenBEAM](https://github.com/jyyu/ScreenBEAM) is an [R](http://www.r-project.org) package to do gene-level meta-anlaysis of high-throughput functional genomics RNAi or CRISPR screening data. Both microarray and NGS data are supported. f you find this package useful, please cite the following paper:
 
-**Yu J, Silva, J, Califano A. ScreenBEAM: a Novel Meta-Analysis Algorithm for Functional Genomics Screens via Bayesian Hierarchical Modeling. _Bioinformatics_ (In print), 2015.**
+**Yu J, Silva, J, Califano A. ScreenBEAM: a Novel Meta-Analysis Algorithm for Functional Genomics Screens via Bayesian Hierarchical Modeling. _Bioinformatics, 2015 Sep 28. pii: btv556. [link](http://www.ncbi.nlm.nih.gov/pubmed/26415723)**
 
 
 #### Installation
