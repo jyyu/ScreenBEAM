@@ -144,7 +144,7 @@ DRAgeneLevel<-function(eset,data.type=c('microarray','NGS'),do.normalization=FAL
 
 	DR<-DR[,col.pre]
 
-			DR<-DR[order(DR[,grep('^B\\.',names(DR)))[1],]
+			DR<-DR[order(DR[,grep('^B\\.',names(DR))[1]]),]
 
 			DR
 
