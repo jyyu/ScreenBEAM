@@ -120,7 +120,7 @@ DRAgeneLevel<-function(eset,data.type=c('microarray','NGS'),do.normalization=FAL
 		names(dr)[-1]<-paste(names(dr)[-1],'.',sum(comp==1),'VS',sum(comp==0),'.',condition.tag,'_VS_',ctrl.tag,sep='')
 
 		#DR<-merge(DR,dr,by.x='gene',by.y='gene',all.x=TRUE)
-		DR<-merge(DR,dr,by.x='gene',by.y='gene')
+		DR<-merge(DR,dr,by='gene')
 	}
 
 
@@ -142,14 +142,9 @@ DRAgeneLevel<-function(eset,data.type=c('microarray','NGS'),do.normalization=FAL
 			paste(rep(col.sel,each=length(condition)),rep(condition,length(col.sel)),sep='.')
 	)
 
-	DR<-DR[,
-			c(col.pre
-							#,
-							#setdiff(names(DR),col.pre)
-					)
-			]
+	DR<-DR[,col.pre]
 
-			DR<-DR[order(DR[,grep('^B\\.',names(DR))]),]
+			DR<-DR[order(DR[,grep('^B\\.',names(DR))[1]),]
 
 			DR
 
