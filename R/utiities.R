@@ -128,7 +128,7 @@ DRAgeneLevel<-function(eset,data.type=c('microarray','NGS'),do.normalization=FAL
 
 	col.sel<-c('n.sh_sgRNAs.passFilter','B','z','pval','FDR','B.sd')
 
-	condition<-gsub('z.','',grep('^z',names(DR),value=T));condition
+	condition<-gsub('^z.','',grep('^z',names(DR),value=T));condition
 
 	col.pre<-c(
 			###annotation columns
@@ -142,10 +142,7 @@ DRAgeneLevel<-function(eset,data.type=c('microarray','NGS'),do.normalization=FAL
 			paste(rep(col.sel,each=length(condition)),rep(condition,length(col.sel)),sep='.')
 	)
 
-###debug
-	cat(col.pre,'\n')
-	cat(setdiff(col.pre,names(DR)),'\n')
-	cat(setdiff(names(DR),col.pre),'\n')	
+
 	DR<-DR[,col.pre]
 
 			DR<-DR[order(DR[,grep('^B\\.',names(DR))[1]]),]
