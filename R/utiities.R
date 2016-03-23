@@ -144,7 +144,7 @@ DRAgeneLevel<-function(eset,data.type=c('microarray','NGS'),do.normalization=FAL
 
 ###debug
 	cat(col.pre,'\n')
-	cat(names(DR),'\n')
+	cat(setdiff(col.pre,names(DR)),'\n')
 	
 	DR<-DR[,col.pre]
 
