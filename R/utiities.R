@@ -25,7 +25,8 @@ DRAgeneLevel<-function(eset,data.type=c('microarray','NGS'),do.normalization=FAL
     if(data.type=='NGS'){
       cat('normalization: scale normlaization to NGS count data!\n')
       pseudoCount<-ifelse(all(exprs(eset)>0),0,1)
-      total<-ifelse(all(apply(exprs(eset),2,sum)<1e6),1e6,NULL)
+
+     if(all(apply(exprs(eset),2,sum)<1e6)) {total<-1e6}else{total<-NULL}
   exprs(eset)<-as.matrix(normalize.scale(exprs(eset),total=total,pseudoCount = pseudoCount))
     }
 
